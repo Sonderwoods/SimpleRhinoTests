@@ -6,6 +6,7 @@ using Rhino.Testing.Fixtures;
 
 using NUnit.Framework;
 using NUnit.Framework.Internal;
+using MyRhinoPlugin1;
 
 namespace SimpleNUnitTests
 {
