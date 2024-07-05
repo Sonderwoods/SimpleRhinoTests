@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="GH_IO">
+		  <HintPath>..\..\..\..\..\..\Program Files\Rhino 8\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
+		</Reference>
+		<Reference Include="GH_Util">
+		  <HintPath>..\..\..\..\..\..\Program Files\Rhino 8\Plug-ins\Grasshopper\GH_Util.dll</HintPath>
+		</Reference>
+		<Reference Include="Grasshopper">
+		  <HintPath>..\..\..\..\..\..\Program Files\Rhino 8\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+		</Reference>
+		<Reference Include="RhinoCommon">
+			<HintPath>..\..\..\..\..\..\Program Files\Rhino 8\System\netcore\RhinoCommon.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+</Project>

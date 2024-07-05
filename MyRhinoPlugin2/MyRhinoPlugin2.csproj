@@ -15,6 +15,7 @@
   <ItemGroup>
     <Reference Include="RhinoCommon">
       <HintPath>..\..\..\..\..\..\Program Files\Rhino 8\System\netcore\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   

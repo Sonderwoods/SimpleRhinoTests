@@ -6,7 +6,7 @@ namespace MSTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.IsTrue(true);
+            Assert.IsTrue(string.Equals(MyLibrary.Class1.Hi, "Hello"));
         }
     }
 }
