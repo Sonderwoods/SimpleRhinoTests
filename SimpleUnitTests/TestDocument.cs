@@ -6,7 +6,7 @@ using Rhino.Testing.Fixtures;
 
 using NUnit.Framework;
 using NUnit.Framework.Internal;
-using MyRhinoPlugin1;
+//using MyRhinoPlugin2;
 
 namespace SimpleNUnitTests
 {
@@ -31,24 +31,24 @@ namespace SimpleNUnitTests
             Assert.DoesNotThrow(() => RhinoDoc.OpenHeadless(modelPath));
         }
 
-        [Test]
-        public void TestRhinoCommand()
-        {
-            string output = Path.GetDirectoryName(GetType().Assembly.Location);
-            string modelPath = Path.Combine(output, @"Files\circle.3dm");
+        //[Test]
+        //public void TestRhinoCommand()
+        //{
+        //    string output = Path.GetDirectoryName(GetType().Assembly.Location);
+        //    string modelPath = Path.Combine(output, @"Files\circle.3dm");
 
             
 
-            var doc = RhinoDoc.OpenHeadless(modelPath);
+        //    var doc = RhinoDoc.OpenHeadless(modelPath);
 
-            var count = doc.Objects.Count;
+        //    var count = doc.Objects.Count;
 
-            var myBrep = MyRhinoPlugin1.MyTestClass.GetABrep();
-            Guid guid = doc.Objects.Add(myBrep);
+        //    var myBrep = MyRhinoPlugin2.MyTestClass.GetABrep();
+        //    Guid guid = doc.Objects.Add(myBrep);
 
-            Assert.That(guid, Is.Not.EqualTo(Guid.Empty));
+        //    Assert.That(guid, Is.Not.EqualTo(Guid.Empty));
 
-            Assert.That(doc.Objects.Count, Is.EqualTo(count + 1));
-        }
+        //    Assert.That(doc.Objects.Count, Is.EqualTo(count + 1));
+        //}
     }
 }

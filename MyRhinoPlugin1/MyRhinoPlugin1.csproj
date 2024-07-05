@@ -1,12 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net7.0-windows</TargetFrameworks>
+    <TargetFrameworks>net7.0</TargetFrameworks>
     <Version>1.0</Version>
     <Title>MyRhinoPlugin1</Title>
     <Description>Description of MyRhinoPlugin1</Description>
     <TargetExt>.rhp</TargetExt>
-    <UseWpf>true</UseWpf>
-    <UseWindowsForms>true</UseWindowsForms>
 	  <RhinoSystemDirectory>C:\Program Files\Rhino 8\System</RhinoSystemDirectory>
 	  
   </PropertyGroup>
@@ -18,6 +16,7 @@
 
 	<ItemGroup>
 		<Reference Include="$(RhinoSystemDirectory)\netcore\RhinoCommon.dll" Private="False" />
+		
 	</ItemGroup>
   
 </Project>

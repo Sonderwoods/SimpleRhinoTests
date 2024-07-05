@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+    <Version>1.0</Version>
+    <Title>MyRhinoPlugin2</Title>
+    <Description>Description of MyRhinoPlugin2</Description>
+    <TargetExt>.rhp</TargetExt>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\..\Program Files\Rhino 8\System\netcore\RhinoCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+</Project>
